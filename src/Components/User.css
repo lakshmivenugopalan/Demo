@@ -1,13 +1,15 @@
 
  .jobDetails-description{
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     overflow-x: hidden;
 }
 .jobDetails-description-main{
     overflow: hidden;
+    background-color: white;
+  border-radius: 10px;
 }
 .main-blank{
-    background-color: #dfeeff;
+    background-color: #aecef2;
     border-radius: 10px 10px 0px 0px;
     height: 100px;
 

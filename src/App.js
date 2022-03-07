@@ -2,7 +2,7 @@
 import React,{useState} from 'react';
 import './App.css';
 import Nav from './Components/Nav'
-import Search from './Components/Search';
+import Search1 from './Components/Search1';
 import Card1 from './Components/Card1';
 import MsPage  from './Pages/MsPage';
 import HpPage from './Pages/HpPage';
@@ -20,7 +20,9 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Search />
+     
+      <Search1/>
+      
       <div className='jobDetails-main'>
         <div className="jobDetails-content">
 

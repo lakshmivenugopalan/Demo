@@ -14,7 +14,7 @@ function Card1({ data }) {
       {Data.map((item) => {
        
         return (
-          <>
+          <div className='job-first-main'>
             <div className="jobCard-first">
               <div className="jobCard-first-logo"><img src={item.image} className='hp' /></div>
               <div className="jobCard-first-rating"><p className='number'> {item.rating}</p></div>
@@ -36,7 +36,7 @@ function Card1({ data }) {
             </div>
 
 
-          </>
+          </div>
 
 
 
@@ -44,36 +44,7 @@ function Card1({ data }) {
         )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       })}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
 
