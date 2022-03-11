@@ -5,15 +5,13 @@ import Nav from './Components/Nav'
 import Search1 from './Components/Search1';
 import Card1 from './Components/Card1';
 import MsPage  from './Pages/MsPage';
-import HpPage from './Pages/HpPage';
-import User from  './Pages/User';
 
 
 function App() {
 
          
          
-  const[showPage,setShowPage]=useState('micro')
+  const[showPage,setShowPage]=useState('')
 
  
    
@@ -28,15 +26,14 @@ function App() {
 
 
           <Card1 data={setShowPage}
-                />
+                     />
          
         </div>
 
 
       
-        {showPage=="micro" && < MsPage/>}
-        {showPage=="hp" && <HpPage/>}
-        {showPage=="google" && <User/>}
+        < MsPage item={showPage}/>
+        
                
       
       </div>

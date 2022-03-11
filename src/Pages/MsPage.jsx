@@ -1,16 +1,21 @@
-import React from 'react';
+import React,{ useState,useEffect } from 'react';
 import { FaCertificate } from "react-icons/fa";
 import { FaShareAlt } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
+import axios from 'axios';
 import "../Components/User.css"
-function User() {
+function User({item}) {
+console.log(item)
+ 
+
+
   return (
    
     <div className="jobDetails-description">
     <div className="jobDetails-description-main">
       <div className="main-blank"></div>
       <div className="description-main-logo">
-        <div className="main-logo-left"><i><img src='Images/micro.png' className='windows'/></i></div>
+        <div className="main-logo-left"><i><img src={item.image} className='g'/></i></div>
         <div className="main-logo-right">
           <i className='certificate'><FaCertificate/></i>
           <i className='sharing'><FaShareAlt/></i>
@@ -19,34 +24,28 @@ function User() {
       </div>
       <div className="description-main-content">
         <div className="main-content-head">
-          <p>Sr.Back-end Developer</p>
+          <p>{item.position}</p>
         </div>
         <div className="main-content-subHead">
-          <p><span>Microsoft</span> . USA, San Francisco</p>
-          <p className='subHead-right'>17 last day  .  94 apply</p>
+          <p><span>{item.title}</span>{item.place} </p>
+          <p className='subHead-right'>{item.day}</p>
         </div>
         <div className="main-content-para-t1">
-          <p>Genel Bakis</p>
+          <p>{item.header1}</p>
         </div>
         <div className="main-content-para-d1">
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem Ipsum is thatdistracted by the readable content of a page when
-            looking at its layout. The point of using Lorem Ipsum is that
-
-            distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem Ipsum is that
+          <p>{item.description1}
           </p>
         </div>
         <div className="main-content-para-t1">
-          <p>Is tanimi</p>
+          <p>{item.header2}</p>
         </div>
         <div className="main-content-para-d1">
-          <p>It is a long established fact that a
-             reader will be distracted by the readable content of a page when</p>
+          <p>{item.description2}</p>
              <p>
                <li>
-                  A keen wye for design and quality for user experience
-                  <li>Experience using dev/build tools such as git</li>
+                 {item.list1}
+                  <li>{item.list2}</li>
 
                </li>
                 </p> 
